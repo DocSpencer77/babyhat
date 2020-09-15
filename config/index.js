@@ -24,11 +24,11 @@ export default {
   optionGroups: {
     fit: ["size"]
   },
-  measurements: [],
+  measurements: ["headCircumference"],
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ["box"],
+  parts: ["hatgore"],
   options: {
     size: { pct: 50, min: 10, max: 100 }
   }
