@@ -28,7 +28,7 @@ export default {
   dependencies: {},
   inject: {},
   hide: [],
-  parts: ["hatgore"],
+  parts: ["hatgore","hatbrim"], //add 'hatbrim'
   options: {
     size: { pct: 50, min: 10, max: 100 }
   }

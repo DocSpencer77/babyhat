@@ -16,10 +16,10 @@ export default function(part) {
   //let w = 500 * options.size
   let w=95, h=148, m=10
     //here we have the orig size of our drawing box 95x148 plus 10mm margins
-  points.topLeft = new Point(0-m, 0-m)
-  points.topRight = new Point(m+w, 0-m)
-  points.bottomLeft = new Point(0-m, m+h)
-  points.bottomRight = new Point(m+w, m+h)
+  points.topLeft = new Point(0, 0)
+  points.topRight = new Point(w, 0)
+  points.bottomLeft = new Point(0, h)
+  points.bottomRight = new Point(w, h)
 
 //let's get points of our gore starting with bottom right
 points.goreBR = new Point(95,148)
