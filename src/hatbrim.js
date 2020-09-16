@@ -13,15 +13,9 @@ export default function(part) {
       macro
     } = part.shorthand()
   
-    var sa = 6.35  // 1/4" in mm
-    var ttlW = 95 + (2 * sa) + 20  // 
-    var ttlH = 148 + 20  // will think about the extraction from measurements for this
+    
     //let w = 500 * options.size
     let w = 95, h = 145
-    // points.topLeft = new Point(0, 0)
-    // points.topRight = new Point(w, 0)
-    // points.bottomLeft = new Point(0, w / 2)
-    // points.bottomRight = new Point(w, w / 2)
     points.topLeft = new Point(0, 0)
     points.topRight = new Point(w, 0)
     points.bottomLeft = new Point(0, h)
@@ -38,12 +32,12 @@ export default function(part) {
   
     // Complete?
     if (complete) {
-      points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
-      snippets.logo = new Snippet('logo', points.logo)
+       points.logo = points.topLeft.shiftFractionTowards(points.bottomRight, 0.5)
+      //snippets.logo = new Snippet('logo', points.logo)
       points.text = points.logo
         .shift(-90, w / 8)
         .attr('data-text', 'hello')
-        .attr('data-text-class', 'center')
+        .attr('data-text-class', 'center') */
   
       if (sa) {
         paths.sa = paths.seam.offset(sa).attr('class', 'fabric sa')
